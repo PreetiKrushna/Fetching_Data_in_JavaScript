@@ -1,0 +1,8 @@
+Note there is no way to be certain, from the information received by the loadend event, as to which condition caused the operation to terminate; however, you can use this to handle tasks that need to be performed in all end-of-transfer scenarios.
+
+Submitting forms and uploading files
+Instances of XMLHttpRequest can be used to submit forms in two ways:
+
+standalone, without any API,
+using the FormData API.
+Using the FormData API is the simplest and fastest, but has the disadvantage that data collected can not be stringified. Using only XHR is more complex, but typically more flexible and powerful.
